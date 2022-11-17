@@ -1,0 +1,11 @@
+@import '../../mixins';
+
+header {
+  position: sticky;
+  background-color: white;
+  
+  .narrow-container {
+    @include flex-between(center);
+    height: 130px;
+  }
+}

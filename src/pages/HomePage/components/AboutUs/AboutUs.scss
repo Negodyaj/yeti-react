@@ -1,0 +1,50 @@
+@import '../../../../variables';
+@import '../../../../mixins';
+
+.about-us {
+  @include flex-between;
+
+  p {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 100px;
+  }
+
+  .two-images-and-text {
+    @include flex-between;
+  }
+
+  .about-us-card {
+    width: 370px;
+    height: 450px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:last-child {
+      @include flex-between;
+      flex-direction: column;
+      padding-left: 50px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: 1870px) and (min-width: 1391px) {
+  .about-us {
+    .about-us-card {
+      width: 285px;
+      height: 400px;
+
+      &:last-child {
+        padding-left: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../../../variables';
+@import '../../../../mixins';
+
+h1 {
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 117px;
+  letter-spacing: 0.03em;
+}
+
+.hero-block {
+  padding-top: 100px;
+  margin-bottom: 120px;
+
+  h1 {
+    position: relative;
+  }
+
+  img {
+    margin-top: -88px;
+  }
+
+  .inner-container {
+    @include flex-between(center);
+    margin-top: -42px;
+  }
+
+  p {
+    font-family: $secondary-font;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media (max-width: 1870px) and (min-width: 1391px) {
+  h1 {
+    font-size: 80px;
+    line-height: 94px;
+  }
+
+  .hero-block {
+    padding-top: 40px;
+
+    picture,
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1390px) {
+  h1 {
+    font-size: 70px;
+    line-height: 86px;
+  }
+  
+  .hero-block {
+    padding-top: 30px;
+
+    picture,
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+  .hero-block {
+    padding-top: 45px;
+    padding-left: 0;
+    
+    p {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    .inner-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    a {
+      align-self: flex-end;
+      margin-top: 40px;
+    }
+
+    svg {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}

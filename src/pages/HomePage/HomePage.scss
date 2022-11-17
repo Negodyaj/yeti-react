@@ -1,0 +1,14 @@
+@import '../../variables';
+
+main a {
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: $font-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

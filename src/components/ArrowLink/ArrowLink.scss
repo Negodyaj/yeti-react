@@ -1,0 +1,9 @@
+@import '../../variables';
+
+.orange {
+  color: $accent-color;
+
+  path {
+    stroke: $accent-color;
+  }
+}
