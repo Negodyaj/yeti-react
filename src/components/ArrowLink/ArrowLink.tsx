@@ -1,12 +1,12 @@
 import "./ArrowLink.scss";
 
-export interface ArrowLinkProps {
+export interface IArrowLinkProps {
   title: string;
   href: string;
   isOrange?: boolean;
 }
 
-export const ArrowLink = (props: ArrowLinkProps) => {
+export const ArrowLink = (props: IArrowLinkProps) => {
   const { title, href, isOrange } = props;
   return (
     <a href={href} className={ isOrange ? 'orange' : '' }>
