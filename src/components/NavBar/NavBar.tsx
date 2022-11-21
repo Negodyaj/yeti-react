@@ -1,23 +1,14 @@
+import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
 export const NavBar = () => {
   return (
     <nav className="desktop-only">
-      <a href="#" className="nav-link">
-        О МАГАЗИНЕ
-      </a>
-      <a href="catalog.html" className="nav-link">
-        КАТАЛОГ
-      </a>
-      <a href="#" className="nav-link">
-        КОНТАКТЫ
-      </a>
-      <a href="#" className="nav-link">
-        ЛИЧНЫЙ КАБИНЕТ
-      </a>
-      <a href="#" className="nav-link">
-        КОРЗИНА (<span id="goods-count">0</span>)
-      </a>
+      <Link to="/about" className="nav-link">О МАГАЗИНЕ</Link>
+      <Link to="/catalog" className="nav-link">КАТАЛОГ</Link>
+      <Link to="/contacts" className="nav-link">КОНТАКТЫ</Link>
+      <Link to="/profile" className="nav-link">ЛИЧНЫЙ КАБИНЕТ</Link>
+      <Link to="/cart" className="nav-link">КОРЗИНА (<span id="goods-count">0</span>)</Link>
     </nav>
   );
 };
