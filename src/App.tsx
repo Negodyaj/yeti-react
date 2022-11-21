@@ -3,7 +3,7 @@ import './App.scss';
 import { HomePage } from './pages/HomePage/HomePage';
 import { Header } from './pages/Header/Header';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
       <Header />
@@ -14,5 +14,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
