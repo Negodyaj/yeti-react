@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="narrow-container">
         <Link to="/">
           <img src={logo} alt="Our logo" />
-        </Link>        
+        </Link>
         <NavBar />
         <button className="burger-menu mobile-only">burger</button>
       </div>

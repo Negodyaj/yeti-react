@@ -48,3 +48,45 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .about-us {
+    flex-direction: column;
+    margin-bottom: 110px;
+
+    .about-us-content {
+      margin-top: 53px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
+
+    .two-images-and-text {
+      gap: 20px;
+      overflow: hidden;
+      margin-right: -20px;
+      margin-bottom: 40px;
+    }
+
+    .about-us-card {
+      width: 246px;
+      height: 400px;
+      flex-shrink: 0;
+    }
+
+    .about-us-description p {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
