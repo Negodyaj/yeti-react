@@ -1,13 +1,13 @@
-import React from 'react';
 import './App.scss';
-import { HomePage } from './pages/HomePage/HomePage';
-import { Header } from './pages/Header/Header';
-import { Routes, Route } from 'react-router-dom';
-import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 import { AboutUsPage } from './pages/AboutUsPage/AboutUsPage';
 import { CartPage } from './pages/CartPage/CartPage';
+import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 import { ContactsPage } from './pages/ContactsPage/ContactsPage';
+import { Header } from './pages/Header/Header';
+import { HomePage } from './pages/HomePage/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
+import { Route, Routes } from 'react-router-dom';
+import React from 'react';
 
 export const App = () => {
   return (
@@ -26,4 +26,4 @@ export const App = () => {
       <footer>Footer</footer>
     </div>
   );
-}
+};

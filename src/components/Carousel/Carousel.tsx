@@ -1,7 +1,7 @@
-import { ProductCard } from "../ProductCard/ProductCard";
-import "./Carousel.scss";
-import { useState } from "react";
-import { IProduct } from "../../models/Product";
+import './Carousel.scss';
+import { IProduct } from '../../models/Product';
+import { ProductCard } from '../ProductCard/ProductCard';
+import { useState } from 'react';
 
 interface ICarouselProps {
   title: string;
@@ -51,9 +51,7 @@ export const Carousel = (props: ICarouselProps) => {
             price={product.price}
             title={product.title}
             key={product.id}
-            marginLeft={
-              index === 0 ? `${-productCardWidth * currentSlideNumber}px` : ""
-            }
+            marginLeft={index === 0 ? `${-productCardWidth * currentSlideNumber}px` : ''}
           />
         ))}
       </div>

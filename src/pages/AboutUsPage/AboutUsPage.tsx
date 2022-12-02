@@ -1,7 +1,7 @@
-import { createContext, useState } from 'react';
 import './AboutUsPage.scss';
 import { Clicker } from './components/Clicker';
 import { ValuePrinter } from './components/ValuePrinter';
+import { createContext, useState } from 'react';
 
 const aboutUsPageData = {
   currentValue: 30,
@@ -23,14 +23,16 @@ export const AboutUsPage = () => {
   };
 
   return (
-    <AboutUsPageContext.Provider value={{
-      currentValue: currentValue,
-      onReduce: onReduce,
-      onIncrease: onIncrease,
-    }}>
+    <AboutUsPageContext.Provider
+      value={{
+        currentValue: currentValue,
+        onReduce: onReduce,
+        onIncrease: onIncrease,
+      }}
+    >
       <h1>Some text about us</h1>
       <ValuePrinter />
       <Clicker />
     </AboutUsPageContext.Provider>
   );
-}
+};
