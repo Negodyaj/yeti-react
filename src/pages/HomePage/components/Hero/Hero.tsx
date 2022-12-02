@@ -1,7 +1,7 @@
-import "./Hero.scss";
+import './Hero.scss';
+import { ArrowLink } from '../../../../components/ArrowLink/ArrowLink';
 import desktopImage from './hero-photo.png';
 import mobileImage from './hero-image-mobile.png';
-import { ArrowLink } from "../../../../components/ArrowLink/ArrowLink";
 
 export const Hero = () => {
   return (
@@ -15,12 +15,9 @@ export const Hero = () => {
         СПОРТА
       </h1>
       <picture className="about-us-img">
-        <source
-          srcSet={mobileImage}
-          media="(max-width: 900px)"
-        />
+        <source srcSet={mobileImage} media="(max-width: 900px)" />
         <source srcSet={desktopImage} />
-        <img srcSet={desktopImage} alt="hero-image" />
+        <img srcSet={desktopImage} alt="hero" />
       </picture>
       <div className="narrow-container">
         <div className="inner-container">

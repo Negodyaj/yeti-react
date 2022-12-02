@@ -1,13 +1,12 @@
-import { ArrowLink } from "../../../../components/ArrowLink/ArrowLink";
-import "./Catalog.scss";
-import { CatalogItem } from "./CatalogItem";
-import snowboards from './assets/Rectangle 27.png';
-import mounts from './assets/Rectangle 28.png';
+import './Catalog.scss';
+import { CatalogItem } from './CatalogItem';
+import accessories from './assets/Rectangle 34.png';
 import boots from './assets/Rectangle 29.png';
 import clothes from './assets/Rectangle 31.png';
-import masks from './assets/Rectangle 32.png';
 import helmets from './assets/Rectangle 33.png';
-import accessories from './assets/Rectangle 34.png';
+import masks from './assets/Rectangle 32.png';
+import mounts from './assets/Rectangle 28.png';
+import snowboards from './assets/Rectangle 27.png';
 
 export const Catalog = () => {
   return (

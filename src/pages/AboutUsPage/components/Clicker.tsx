@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { AboutUsPageContext } from "../AboutUsPage";
+import { AboutUsPageContext } from '../AboutUsPage';
+import { useContext } from 'react';
 
 export const Clicker = () => {
   const { onReduce, onIncrease } = useContext(AboutUsPageContext);
@@ -10,4 +10,4 @@ export const Clicker = () => {
       <button onClick={onIncrease}>Increase</button>
     </>
   );
-}
+};

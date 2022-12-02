@@ -1,5 +1,5 @@
-import { ArrowLink } from '../../../../components/ArrowLink/ArrowLink';
 import './CatalogItem.scss';
+import { ArrowLink } from '../../../../components/ArrowLink/ArrowLink';
 
 interface ICatalogItemProps {
   isWide?: boolean;
@@ -11,7 +11,7 @@ interface ICatalogItemProps {
 export const CatalogItem = (props: ICatalogItemProps) => {
   const { isWide, imageSrc, linkTitle, linkHref } = props;
   return (
-    <div className={ `grid-item ${ isWide ? 'wide' : 'small' }` } >
+    <div className={`grid-item ${isWide ? 'wide' : 'small'}`}>
       <img src={imageSrc} alt="" />
       <ArrowLink title={linkTitle} href={linkHref} />
     </div>

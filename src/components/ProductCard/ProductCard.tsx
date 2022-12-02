@@ -10,7 +10,7 @@ interface IProductCardProps {
 export const ProductCard = (props: IProductCardProps) => {
   const { imageSrc, price, title, marginLeft } = props;
   return (
-    <div className="product-item" style={ marginLeft ? { marginLeft: marginLeft } : {} }>
+    <div className="product-item" style={marginLeft ? { marginLeft: marginLeft } : {}}>
       <img src={imageSrc} alt="" />
       <span className="title">{title}</span>
       <span className="price">{price} ₽</span>
