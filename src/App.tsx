@@ -7,6 +7,7 @@ import { Header } from './pages/Header/Header';
 import { HomePage } from './pages/HomePage/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 import { Route, Routes } from 'react-router-dom';
+import { TestPage } from './pages/TestPage/TestPage';
 import React from 'react';
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/test" element={<TestPage />} />
           <Route path="/catalog" element={<CatalogPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
