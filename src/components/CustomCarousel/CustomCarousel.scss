@@ -1,0 +1,7 @@
+@import '../../variables';
+
+.custom-carousel {
+  .slick-prev:before, .slick-next:before {
+    color: $accent-color;
+  }
+}

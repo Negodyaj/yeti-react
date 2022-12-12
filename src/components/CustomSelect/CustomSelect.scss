@@ -1,0 +1,10 @@
+@import '../../variables';
+
+.custom-select {
+  .item-selected {
+    background-color: $accent-color;
+  }
+  .item-focused {
+    background-color: rgba(0, 0, 0, 0.28);
+  }
+}

@@ -32,21 +32,4 @@
     gap: 20px;
     padding-top: $padding-top;
   }
-
-  .product-item {
-    display: flex;
-    flex-direction: column;
-    transition: margin-left .6s ease-in-out;
-    flex: 0 0 370px;
-
-    img {
-      height: $product-image-height;
-    }
-
-    .title {
-      font-weight: 600;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
-  }
 }
