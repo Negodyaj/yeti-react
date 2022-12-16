@@ -6,6 +6,7 @@ import { ContactsPage } from './pages/ContactsPage/ContactsPage';
 import { Header } from './pages/Header/Header';
 import { HomePage } from './pages/HomePage/HomePage';
 import { ProfilePage } from './pages/ProfilePage/ProfilePage';
+import { RegisterPage } from './pages/RegisterPage/RegisterPage';
 import { Route, Routes } from 'react-router-dom';
 import { TestPage } from './pages/TestPage/TestPage';
 import React from 'react';
@@ -23,6 +24,7 @@ export const App = () => {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/sign-up" element={<RegisterPage />} />
         </Routes>
       </main>
       <footer>Footer</footer>

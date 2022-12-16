@@ -1,0 +1,19 @@
+.form-element {
+  width: 250px;
+  margin-bottom: 20px;
+
+  input {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &.with-error {
+    input {
+      border: 1px solid rgb(203, 18, 18);
+    }
+  }
+}
+
+.validation-error {
+  color: rgb(203, 18, 18);
+}
