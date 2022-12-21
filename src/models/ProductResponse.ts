@@ -1,4 +1,6 @@
-export interface ProductResponse {
+import { IResponse } from './IResponse';
+
+export interface ProductResponse extends IResponse {
   id: number;
   name: string;
   price: number;

@@ -1,8 +1,8 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { User } from '../models/User';
+import { UserResponse } from '../models/UserResponse';
 
 interface CurrentUserState {
-  userInfo?: User;
+  userInfo?: UserResponse;
 }
 
 const initialState: CurrentUserState = {
@@ -10,7 +10,7 @@ const initialState: CurrentUserState = {
 };
 
 interface LoadUserPayload {
-  user: User;
+  user: UserResponse;
 }
 
 export const currentUserSlice = createSlice({
