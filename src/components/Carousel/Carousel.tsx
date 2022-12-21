@@ -1,7 +1,7 @@
 import './Carousel.scss';
 import { IProduct } from '../../models/Product';
 import { ProductCard } from '../ProductCard/ProductCard';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 interface ICarouselProps {
   title: string;
@@ -47,6 +47,7 @@ export const Carousel = (props: ICarouselProps) => {
       <div className="carousel-right">
         {products.map((product, index) => (
           <ProductCard
+            id={0}
             imageSrc={product.imageSrc}
             price={product.price}
             title={product.title}

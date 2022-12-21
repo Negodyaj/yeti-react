@@ -1,7 +1,19 @@
 import './ProductPage.scss';
 import { CustomSelect } from '../../components/CustomSelect/CustomSelect';
+import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { baseUrl } from '../../constants';
 
 export const ProductPage = () => {
+  const urlParams = useParams<{ productId: string }>();
+  const productId = urlParams.productId;
+
+  useEffect(() => {
+    fetch(`${baseUrl}/products/${productId}`)
+      .then((response) => response.json())
+      .then((data) => console.log(data.name));
+  }, [productId]);
+
   const availableSizes = [
     { value: 'xs', label: 'XS' },
     { value: 's', label: 'S' },

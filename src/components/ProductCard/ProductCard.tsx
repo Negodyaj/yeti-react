@@ -1,6 +1,9 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './ProductCard.scss';
 
 interface IProductCardProps {
+  id: number;
   title: string;
   price: number;
   imageSrc: string;
@@ -8,12 +11,12 @@ interface IProductCardProps {
 }
 
 export const ProductCard = (props: IProductCardProps) => {
-  const { imageSrc, price, title, marginLeft } = props;
+  const { imageSrc, price, title } = props;
   return (
-    <div className="product-item" style={marginLeft ? { marginLeft: marginLeft } : {}}>
+    <Link to={`/catalog/${props.id}`} className="product-item">
       <img src={imageSrc} alt="" />
       <span className="title">{title}</span>
       <span className="price">{price} ₽</span>
-    </div>
+    </Link>
   );
 };

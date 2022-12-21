@@ -40,11 +40,11 @@ export const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/catalog/:productId" element={<ProductPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/product" element={<ProductPage />} />
           <Route path="/sign-up" element={<RegisterPage />} />
         </Routes>
       </main>
